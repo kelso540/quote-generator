@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleGen.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0f62ced13f.js" crossorigin="anonymous"></script>
+  <title>Quote Generator</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav>
+      <div class="navHead">
+        <a href="index.html"><span class="headLink">Quote Atheneum</span></a>
+      </div>
+      <div class="navLink">
+        <div class="textContainer">
+          <div class="homeLink">
+            <a href="index.html"><span class="linkA">Home</span></a>
+          </div>
+          <div class="generatorLink">
+            <a href="generator.html"><span class="linkA">Generator</span></a>
+          </div>
+          <div class="aboutLink">
+            <a href="about.html"><span class="linkA">About</span></a>
+          </div>
+        </div>
+        <div class="picContainer">
+          <div class="twLink">
+            <a href="https://twitter.com/kjacks540"><i class="linkB fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="ghLink">
+            <a href="https://github.com/kelso540"><i class="linkB fa-brands fa-github"></i></a>
+          </div>
+          <div class="timeText">
+            <strong id="time"></strong>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mainContentGenerator">
+
+      <div class="quoteHeader">
+        <div class="timeText">
+          <strong id="time"></strong>
+        </div>
+        <div class="headText">
+          <strong class="head">Quote Generator</strong>
+        </div>
+        <div class="headText">
+          <strong>May you find some Inspiration</strong>
+        </div>
+      </div>
+
+      <div class="randomQuote">
+        <div class="randomLine1">
+          <strong>Your random quote,</strong>
+        </div>
+        <div class="randomLine2">
+          <strong id="randQuote">"This will be the quote"</strong>
+        </div>
+        <div class="randomLine3">
+          <strong id="authorQuote">Author</strong>
+        </div>
+        <div class="randomLine4">
+          <i class="linkB fa-regular fa-copy smCopy"></i>
+        </div>
+      </div>
+
+      <div class="randomButton">
+        <button class="generate">New Quote</button>
+      </div>
+
+      <div class="ratings">
+        <div class="rateHead">
+          <h1>Rate if you like</h1>
+        </div>
+        <div class="rateHead">
+          <h2>Do you like the quote?</h2>
+          <h4>( Double click to clear! )</h4>
+        </div>
+        <div class="starsDiv">
+          <button class="btn btn1"></button>
+          <button class="btn btn2"></button>
+          <button class="btn btn3"></button>
+          <button class="btn btn4"></button>
+          <button class="btn btn5"></button>
+        </div>
+        <div class="rateFill">
+          <p id="fill"></p>
+          <p id="thank"></p>
+        </div>
+        <divclass="rateHead">
+          <button class="quotGenBtn">Rate</button>
+      </div>
+    </div>
+
+    <div class="rateSubmit">
+      <button class="quoteHistory">Make List</button>
+    </div>
+
+    <div class="historyScrollContainer">
+      <div class="history">
+        <div class="clearHistory">
+          <button class="histClear">Clear All</button>
+          <button class="lastClear">Remove Last</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <script src="scriptGen.js"></script>
+
+</body>
+
+</html>

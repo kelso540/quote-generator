@@ -1,0 +1,431 @@
+:root{
+    --primary: #3f826d80; 
+    --secondary: #c031217f; 
+    --blue: #545e7584; 
+    --red: #230004db; 
+    --white: #F7F7FF;
+    --offWhite: #F2D0A4; 
+    --black: rgb(0, 0, 0);  
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1590&q=80");
+    background-size:cover;
+    background-repeat: repeat;
+    font-family: 'Mukta', sans-serif;
+    background-attachment: fixed;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.container{
+    margin: auto;
+}
+    nav{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.818);
+        padding: 0 10px 0 10px;
+    }
+    .navHead{
+        font-size: xx-large;
+    }
+            .headLink{
+                cursor: pointer;
+                padding: 0 20px; 
+                color: rgb(207, 193, 176);
+            }
+            .headLink:hover{
+                color:rgb(255, 255, 255);
+            }
+    .navLink{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+            .textContainer{
+                display: flex;
+            }
+                    .linkA{
+                    padding: 0 10px;
+                    border-bottom: solid transparent;
+                    color: rgb(153, 144, 132);
+                    cursor: pointer;
+                    }
+                    .linkA:hover{
+                        border-bottom: solid;
+                        color: rgb(255, 255, 255); 
+                    }
+            .picContainer{
+                display: flex;
+                margin-left: 20px; 
+            }
+                    .linkB{
+                        padding: 5px;
+                        color: rgb(73, 73, 73);
+                        cursor: pointer;
+                    }
+                    .linkB:hover{
+                        color: rgba(255, 255, 255, 0.669);;
+                    }
+                    .timeText{
+                        padding-left: 5px; 
+                    }
+.mainContentGenerator{
+    margin: auto;
+}
+        .quoteHeader{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 400px; 
+            text-align: start;
+            padding-left: 20px;
+            margin: 5px;
+            font-size: 28px;
+            color: var(--white);
+            background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.400), transparent);
+        }
+                .timeTextA{
+                    display: none;
+                    font-size: x-large;
+                    font-variant: small-caps;
+                    color: var(--white);
+                }
+
+                .headText{
+                    padding: 5px;
+                }
+                        .head{
+                            font-size: 100px;
+                        }
+.randomQuote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    padding: 40px; 
+    font-size: x-large;
+    contain: content;
+    color: var(--black);       
+    background-image: url("https://images.unsplash.com/photo-1591951425600-d09958978584?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: 200%;
+    background-position: 52% 0;
+    animation: getBig 2s ease-in-out forwards;
+    position: absolute;
+    left: 40px; 
+    top: 550px;
+    box-shadow: 5px 10px 20px black;
+}
+        .randomLine1{
+            padding: 20px 15%;
+        }
+        .randomLine2{
+            padding: 10px;
+            text-align: center;
+        }
+        .randomLine3{
+            padding: 20px 20%;
+            text-align: end;
+        }
+        .randomLine4{
+            text-align: center;
+        }
+.randomButton{
+    text-align: center;
+    margin: 30px;
+}
+        .generate{
+            padding: 15px 30px;
+            background-color: var(--white);
+            color: var(--black);
+            border: none;
+            border-radius: 100px;
+            box-shadow: inset 2px 4px 8px black;
+            font-size: larger;
+            position: absolute;
+            right: 340px; 
+            top: 350px; 
+        }
+        
+        .generate:hover{
+            background-color: var(--black);
+            color: var(--white);
+            box-shadow: 5px 10px 20px black;
+        }
+        .generate:active{
+            transform: translateY(3px);
+        }
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--blue);
+    background-image: url("https://images.unsplash.com/photo-1477840539360-4a1d23071046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80");
+    background-size: cover;
+    background-position: 0 83%;
+    background-repeat: no-repeat;
+    margin: 20px; 
+    font-variant: small-caps;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    padding: 40px; 
+    animation: getBig 3s ease-in-out forwards;
+    position: absolute;
+    right: 40px; 
+    top: 550px;
+    box-shadow: 5px 10px 20px black; 
+}
+.rateHead{
+    color: var(--white); 
+}
+        .btn{
+            text-align: center;
+            width: 45px; 
+            height: 45px;
+            background-color: transparent;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-image: url("assets/star.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .btn1{
+            background-image: url("assets/starWhite.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .btn2{
+            background-image: url("assets/starWhite.png"); 
+            background-position: center;
+            background-size: cover;
+        }
+        .btn3{
+            background-image: url("assets/starWhite.png");  
+            background-position: center;
+            background-size: cover;
+        }
+        .btn4{
+            background-image: url("assets/starWhite.png");
+            background-position: center;
+            background-size: cover; 
+        }
+        .btn5{
+            background-image: url("assets/starWhite.png");
+            background-position: center;
+            background-size: cover;  
+        }
+.rateFill{
+    font-size: larger;
+    color: var(--white);
+}
+.rateSubmit{ 
+    text-align: center;
+}
+        .quoteHistory{
+            padding: 15px 30px;
+            border-radius: 100px;
+            border: none;
+            box-shadow: inset 2px 4px 8px black;
+            margin: 20px auto;
+            font-size: 20px;
+            background-color: var(--white);
+            color: var(--black);
+            position: absolute;
+            right: 100px; 
+            top: 330px; 
+        }
+        .quoteHistory:hover{
+            background-color: var(--black);
+            color: var(--white);
+            box-shadow: 5px 10px 20px black;
+        }
+        .quoteHistory:active{
+            transform: translateY(3px);
+        }
+.historyScrollContainer{
+    display: none;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1586074032362-2a21ee1ae5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px;
+    animation: getBig 1s ease-in-out forwards;
+    position: relative;
+    top: 600px; 
+}
+        .history{
+            display: flex;     
+            flex-direction: column;
+            text-align: center; 
+            font-size: large;
+            height: fit-content;
+            max-height: 200px;
+            overflow-y: scroll; 
+        }
+                .historyLine{
+                    position: relative;
+                    bottom: 60px;
+                    margin: 0 20px;
+                    z-index: 1;  
+                }
+                .clearHistory{
+                    display: flex;
+                    text-align: start;
+                    position: sticky;
+                    top: 130px; 
+                    z-index: 2; 
+                    width: 15%; 
+                }
+                        .histClear{
+                            margin: 20px 1px; 
+                            padding: 10px 20px 10px 20px;
+                            border-radius: 10px;
+                            border: none;
+                            box-shadow: inset 2px 4px 8px;
+                            font-size: 10px;
+                            background-color: var(--secondary);
+                            color: var(--black); 
+                        }
+                        .histClear:hover{
+                            background-color: var(--offWhite);
+                        }
+                        .histClear:active{
+                            transform: translateY(4px);
+                        }
+                        .lastClear{
+                            margin: 20px 1px; 
+                            padding: 10px 20px 10px 20px;
+                            border-radius: 10px;
+                            border: none;
+                            box-shadow: inset 2px 4px 8px;
+                            font-size: 10px;
+                            background-color: var(--blue);
+                            color: var(--black); 
+                        }
+                        .lastClear:hover{
+                            background-color: var(--offWhite);
+                        }
+                        .lastClear:active{
+                            transform: translateY(4px);
+                        }
+                        .smallTwitterIcon{
+                            margin-right: 10px;
+                            color: var(--black);
+                        }
+                        .smallTwitterIcon:hover{
+                            color: var(--offWhite);
+                        }
+                        .smallCopyIcon{
+                            margin-left: 10px;
+                            color: var(--black);
+                        }
+                        .smallCopyIcon:hover{
+                            color: var(--offWhite);
+                        }
+                  .quotGenBtn{
+                        display: none;
+                        border-radius: 20px;
+                        width: 50%;
+                        padding: 10px;
+                        background-color: rgb(225, 225, 225);
+                        font-size: large;
+                        font-weight: bolder;
+                        font-family: 'Hind', sans-serif;
+                        cursor: pointer;
+                        text-align: center;
+                        position: relative;
+                        color: black;
+                        box-shadow: inset 2px 4px 8px black;
+                    }
+                    .quotGenBtn:hover{
+                        background-color: rgb(0, 0, 0);
+                        color: rgb(230, 225, 225);
+                        box-shadow: 5px 10px 20px black;
+                    }
+
+@keyframes getBig {
+    0%{
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav{
+        flex-direction: column;
+        margin: auto;
+        border-radius: 10px;
+    }
+        .headLink{
+            color: rgb(156, 154, 154);
+        }
+        .navHead{
+            font-size: x-large;
+            text-align: center;
+        }
+        .navLink{
+            width: 100%;
+        }
+        .linkA{
+            padding: 0 10px; 
+            font-size: larger;
+        }
+    .quoteHeader{
+        text-align: center;
+        padding-left: 0;
+        height: auto;
+        font-size: 28px;
+        margin: 5px;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.400), transparent);
+    }
+    .randomQuote{
+        height: auto;
+        width: auto;
+        padding: 0; 
+        border-radius: 10px;
+        font-size: x-large;      
+        position: static;
+    }
+    .ratings{
+        text-align: center;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        padding: 0;
+        position: static;
+    }
+    .head{
+        font-size: 40px;
+    }
+    .generate{
+        position: static;
+    }
+    .quoteHistory{
+        position: static;
+    }
+    .historyScrollContainer{
+        border-radius: 10px;
+        top: 0; 
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .timeText{
+        display: none;
+    }
+    .timeTextA{
+        display: block;
+    }
+}
